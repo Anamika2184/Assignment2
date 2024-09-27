@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@drawable/one"
+    tools:context=".exploreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Genres:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <CheckBox
+            android:id="@+id/genreFiction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiction"/>
+
+        <CheckBox
+            android:id="@+id/genreNonFiction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-Fiction"/>
+
+        <CheckBox
+            android:id="@+id/genreSciFi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sci-Fi"/>
+
+        <CheckBox
+            android:id="@+id/genreDrama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drama"/>
+
+
+        <TextView
+            android:id="@+id/select_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Format:"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/ebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ebook" />
+
+            <RadioButton
+                android:id="@+id/audio_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audiobook" />
+
+            <RadioButton
+                android:id="@+id/paperbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paperbook" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reading Brightness:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <SeekBar
+            android:id="@+id/brightnessSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/brightnessValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brightness Level: 50"
+            android:textSize="18sp"/>
+
+
+        <Switch
+            android:id="@+id/darkModeSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Night Reading Mode"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:id="@+id/rating_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate this book:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="3.0"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/rating_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating: 3.0"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

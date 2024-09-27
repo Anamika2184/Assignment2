@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Banner ImageView for library -->
+    <ImageView
+        android:id="@+id/library_banner"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:src="@drawable/book1"
+        android:scaleType="centerCrop"
+        />
+
+    <!-- Title TextView for Online Library -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Online Library!"
+        android:textSize="28sp"
+        android:textColor="@color/material_on_primary_emphasis_high_type"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/library_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/explore_books_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore Books"
+        android:layout_margin="60dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
